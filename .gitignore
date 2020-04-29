@@ -3,14 +3,12 @@
 
 # Other files and folders
 Thembs.db
-Frame 1.jpg
+Mountain.fig
 
 # Executables
 *.log
-*.fig
 *.txt
 .DS_Store
-
 
 
 
