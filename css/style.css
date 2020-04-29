@@ -4,6 +4,12 @@
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald DemiBold'), local('Oswald-DemiBold'), url('Oswalddemibold.woff2') format('woff2'), url('Oswalddemibold.woff') format('woff'), url('Oswalddemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
 
 html,
 body {
