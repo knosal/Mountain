@@ -5,51 +5,858 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'Oswald';
-    src: local('Oswald DemiBold'), local('Oswald-DemiBold'), url('Oswalddemibold.woff2') format('woff2'), url('Oswalddemibold.woff') format('woff'), url('Oswalddemibold.ttf') format('truetype');
+    font-family: "Oswald";
+    src: local("Oswald DemiBold"), local("Oswald-DemiBold"), url("Oswalddemibold.woff2") format("woff2"), url("Oswalddemibold.woff") format("woff"), url("Oswalddemibold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
 }
 
 html,
 body {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    width: 1366px;
+
+    box-sizing: border-box;
+
     font-family: "Roboto", "Arial", sans-serif;
+
     color: rgba(0, 0, 0, 1);
 }
 
 a {
     cursor: pointer;
     text-decoration: none;
+
     color: rgba(255, 255, 255, 1);
-}
-
-
-.clearfix::after {
-    content: " ";
-    display: table;
-    clear: both;
 }
 
 .container {
     margin: 0 auto;
+    margin-left: 98px;
+    margin-right: 98px;
+    max-width: 1170px;
 }
 
 .visually-hidden {
     position: absolute;
+
     margin: -1px;
-    border: 0;
     width: 1px;
     height: 1px;
+
+    border: 0;
     clip: rect(0 0 0 0);
 }
 
 
 /*-----------------------ШАПКА-----------------------*/
 
+.main-header {
+    height: 650px;
+}
+
+.image-background {
+    z-index: -1;
+    position: absolute;
+
+    background-color: #7e8386;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header .container {
+    padding-top: 42px;
+}
+
+.header__menu_logo {
+    width: 200px;
+    height: 19px;
+}
+
+.menu__navigation {
+    width: 570px;
+}
+
+.menu__navigation_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+   
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.menu__navigation_items-item:not(:last-child) {
+    padding-right: 30px;
+}
+
+.header__right-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 400px;
+}
+
+.header__menu_search {
+    padding-left: 43px;
+
+    font-size: 0px;
+}
+
+.header__menu_search::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%; 
+
+    background: url("../img/svg/vector-Search.svg") no-repeat center center;
+    background-color: rgba(252, 252, 252, 0.4);
+    
+}
+
+.header__menu_enter {
+    padding-left: 30px;
+
+    font-size: 0px;
+}
+
+.header__menu_enter::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%; 
+
+    background: url("../img/svg/vector-people.svg") no-repeat center center;
+    background-color: rgba(252, 252, 252, 0.4);
+
+}
+
+ /*_____СЛАЙДЕР ------------------------*/
+
+.header__slider {
+    margin-top: 150px;
+}
+
+.header__slider_title {
+    margin: 0;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 98px;
+    line-height: 145px;
+    color: #ffffff;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    margin: 0 auto;
+    width: 170px;
+    height: 45px; 
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    border: 2px solid #ffffff;
+
+    color: #ffffff;
+}
+/*-----------------------КОНТЕНТ-----------------------*/
+
+
+
+ /*_____КАРТА ------------------------*/
+
+ .main-content  {
+    margin: 140px 0;
+ }
+ 
+.content__maps {
+    display: flex;
+    position: relative;
+}
+
+.maps_description {
+    position: relative;
+    width: 472px;
+}
+
+.maps_title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 115%;
+}
+
+.maps_content {
+    margin: 0;
+    margin-top: 50px;
+    width: 350px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.content__maps::after {
+    content: "";
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    width: 800px;
+    height: 375px;
+    background: url("../img/map-world-marks.svg") no-repeat;
+    background-size: cover;
+    
+}
+ 
+ /*_____ ПОПУЛЯРНЫЕ ТУРЫ ------------------------*/
+
+.popular-tours {
+    margin-top: 130px;
+}
+
+.popular-tours_title {
+    margin: 0;
+    text-align: center;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 115%;
+}
+
+.popular-tours__tours {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: relative;
+    margin-top: 80px;
+
+    overflow: hidden;
+
+    transform: translateX(0%);
+    transition: transform .2s linear;
+}
+
+.mountain-beluha {
+    width: 370px;
+    height: 326px;
+    background: url("../img/tour-1.jpg") no-repeat;
+}
+.mountain-albrus {
+    width: 370px;
+    height: 326px;
+    background: url("../img/tour-2.jpg") no-repeat;
+}
+.mountain-kilimanjaro {
+    width: 370px;
+    height: 326px;
+    background: url("../img/tour-3.jpg") no-repeat;
+}
+
+.popular-tours__tours_tour {
+    min-width: 370px;
+    margin-right: 30px;
+}
+
+.popular-tours__tours_tour-mountain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 40px;
+    height: 326px;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+.tour-mountain_vector {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vector-country {
+    position: relative;
+    padding-left: 20px;
+}
+
+.vector-country::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13px;
+    height: 16px;
+    background: url("../img/svg/vector-marks.svg") no-repeat center left;
+}
+
+.bookmark-link {
+    font-size: 0px;
+}
+
+.vector-bookmark {
+    position: relative;
+}
+
+.vector-bookmark::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: url("../img/svg/vector-bookmark.svg") no-repeat center center;
+    background-color: rgba(252, 252, 252, 0.4);
+
+}
+
+.tour-mountain_vector a{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 115%;
+    color: #000000;
+}
+
+.country-title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 115%;
+    color: #061B28;
+}
+
+.popular-tours__tours_table {
+    margin: 25px 0;
+}
+
+.tours_table-row-item {
+    position: relative;
+}
+
+.tours_table-row-item:not(:last-of-type) {
+    padding-right: 10px;
+}
+
+.tours_table-row-item:not(:last-of-type)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;                         
+    transform: translate(0, -50%);
+    width: 2px;
+    height: 25px;
+    background: url("../img/svg/vector-Line.svg") no-repeat center center;
+}
+
+.tours_table-row-item:not(:first-of-type) {
+    padding-left: 10px;
+}
+
+.tours_table-price {
+    padding-right: 13px;
+}
+
+.tours_table-price::after {
+    content: "";
+    position: absolute;
+    top: 50%;                         
+    transform: translate(0, -50%);
+    right: 0;
+    width: 11px;
+    height: 13px;
+    background: url("../img/svg/vector-₽.svg") no-repeat center right;
+}
+
+.tour-mountain_description-complexity::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 50%;          
+    left: 0;               
+    transform: translate(0, -50%);
+}
+
+.middle-level,
+.simple-level {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+}
+
+.middle-level::before  {
+    background: url("../img/svg/Ellipse-circle-half.svg") no-repeat center left;
+}
+
+.simple-level::before  {
+    background: url("../img/svg/Ellipse-circle-fourth.svg") no-repeat center left;
+}
+
+.popular-tours__slider-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    margin-top: 40px;
+}
+
+.popular-tours__slider-button .pseudo-radio,
+.climbing-levels__slider-button .pseudo-radio {
+    font-size: 0px;
+}
+
+.left-arrow::before {
+    background: url("../img/svg/arrow-left.svg") no-repeat center center;
+}
+
+.right-arrow::before {
+    background: url("../img/svg/arrow-right.svg") no-repeat center center;
+    margin-left: 25px;
+}
+
+.pseudo-radio::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #E6E8EA;
+}
+
+
+ /*_____ ТАБЛИЦА уровни ------------------------*/
+
+
+.climbing-levels {
+    margin-top: 130px;
+
+    background: url("../img/table-light.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.climbing-levels .container {
+    position: relative;
+    box-sizing: border-box;
+
+    margin: 0 268px;
+    padding: 105px 0;
+    height: inherit;
+}
+
+.climbing-levels__slider-button {
+    position: relative;
+    height: 0;
+}
+
+.climbing-levels__slider-button .pseudo-radio::before {
+    content: "";
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #FCFCFC;
+}
+
+.climbing-levels__slider-button .left-arrow::before {
+    position: absolute;
+}
+
+.climbing-levels__slider-button .right-arrow::before {
+    position: absolute;
+    right: 0;
+    margin: 0;
+}
+
+.climbing-levels__description {
+    text-align: center;
+}
+
+.climbing-levels__description-title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 115%;
+}
+
+.climbing-levels__description-content {
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 60px;
+
+    width: 243px;
+
+    font-size: 18px;
+    line-height: 140%;
+
+    text-align: center;
+}
+
+.climbing-levels_table {
+    margin-bottom: 50px;
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.climbing-levels_table tr{
+    text-align: center;
+}
+
+.climbing-levels_table th, 
+.climbing-levels_table td {
+    padding: 25px;
+} 
+
+.climbing-levels_table-title {
+    font-size: 18px;
+    
+    border-bottom: 1px solid #A3ABB0;
+
+    color: #52616A;
+}
+
+.climbing-levels_table td {
+    font-weight: bold;
+    font-size: 22px;
+
+    border-bottom: 1px solid #A3ABB0;
+
+    color: #061B28;
+     
+}
+
+a.see-all {
+
+    border: 2px solid #061B28;
+
+    color: #000000;
+}
+
+/*-----------------------БЛОГ-----------------------*/
+
+.blog {
+    margin: 140px auto;
+}
+
+.blog__title {
+    margin: 0 auto;
+    margin-bottom: 80px;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 115%;
+    
+    text-align: center;
+
+    color: #061B28;
+}
+
+.blog__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-orange {
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    background-color: #EC5118;
+    color: #ffffff;
+
+}
+
+.blog__items-news_button {
+    margin-top: 30px;
+}
+
+.blog__items {
+   
+}
+
+.blog__items-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    margin: 0;
+    padding: 0;
+    width: 400px;
+
+    list-style: none;
+}
+
+.blog__items-news_article {
+    padding: 30px;
+    border-bottom: 1px solid #061B28;;
+}
+
+.article-active {
+    background-color: #061B28;
+    color: #ffffff;
+}
+
+.content-data {
+    display: inline-block;
+
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 140%;
+    color: #626F77;
+}
+
+.blog__item-data {
+    padding-top: 0;
+}
+
+.blog__item-title {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 140%;
+}
+
+
+
+
+
+.blog__description {
+    margin-left: 70px;
+}
+
+.blog__description_content-title {
+    display: inline-block;
+
+    padding-bottom: 25px;
+
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 140%;
+    color: #061B28;
+}
+
+.blog__description_content-article {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 150%;
+}
+
+
+/*-----------------------ФОРМА-----------------------*/
+
+.feedback {
+    display: flex;
+}
+
+.feedback__form {
+    padding: 80px 60px 80px 98px;
+    min-width: 683px;
+
+    box-sizing: border-box;
+    background-color:#061B28;
+    color: #ffffff;
+}
+
+.feedback__form-fields {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feedback__form-fields_title {
+    padding: 0;
+    margin-bottom: 40px;
+
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 115%;
+}
+
+.feedback__form-description {
+    margin: 0;
+    margin-bottom: 40px;
+
+    width: 431px;
+}
+
+.feedback__form input {
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+
+    width: 100%;
+
+    border: none;
+    border-bottom: 1px solid #45545E;
+
+    background-color: #061B28;
+    color: #7E8386;
+}
+
+.feedback__image {
+    flex-grow: 1;
+    width: 100%;
+    background-image: url("../img/form.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feedback__form-btn {
+    margin-top: 40px;
+}
+
+
+
+
+/*-----------------------КОНТАКТЫ-----------------------*/
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    margin-top: 140px;
+    height: 457px;
+}
+
+.contacts__map img {
+    height: inherit;
+}
+
+.contacts__information {
+    margin-left: 70px;
+}
+
+.contacts__information_title {
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 115%;
+
+    color: #061B28;
+}
+
+
+.contacts__information_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.contacts__information_item-subtitle:not(:last-child) {
+    padding-bottom: 10px;
+
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.contacts__information_item-desc {
+    padding-bottom: 20px;
+
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 140%;
+
+    color: #061B28;
+}
+
+.contacts__information_socials {
+    font-size: 0;
+
+    color: #000000;
+}
+
+.contacts__information_socials::before {
+    content: "";
+
+    display: inline-block;
+    position: relative;
+
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  
+    background-repeat: no-repeat;
+}
+
+.link-facebook::before {
+    background-image: url("../img/svg/contacts-facebook.svg");
+}
+
+.link-instagram::before {
+    background-image: url("../img/svg/contacts-Instagram.svg");
+}
+
+.link-twitter::before {
+    background-image: url("../img/svg/contacts-twitter.svg");
+}
+
 
 
 
 /*-----------------------ПОДВАЛ-----------------------*/
 
+.main-footer {
+    font-size: 12px;
+    line-height: 150%;
+
+    color: #ffffff;
+    background-color: #061B28;
+}
+
+.main-footer  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}

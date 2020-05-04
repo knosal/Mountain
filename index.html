@@ -9,46 +9,340 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-----------------------ШАПКА------------------------->
-    <header>
+
+<!----------------------- ШАПКА ------------------------->
+    <header class="main-header">
         <h1 class="visually-hidden">Туристическое агенство</h1>
+        <img class="image-background" src="img/header-averest.png" alt="" width="1366px" height="650px">
         <div class="container">
-            <div class="header__menu">
+            <section class="header__menu">
+                <h2 class="visually-hidden">Навигационное меню</h2>
                 <div class="header__menu_logo">
-                    <img src="img/logo.svg" alt="Логотип">
+                    <a href="#" title="Логотип">
+                        <img src="img/logo.svg" alt="Логотип"  width="101px"height="21px">
+                    </a>
                 </div>
                 <nav class="menu__navigation">
                     <ul class="menu__navigation_items">
-                        <li class="menu__navigation_items-item">О нас</li>
-                        <li class="menu__navigation_items-item">Туры</li>
-                        <li class="menu__navigation_items-item">Подбор тура</li>
-                        <li class="menu__navigation_items-item">Блог</li>
-                        <li class="menu__navigation_items-item">Контакты</li>
+                        <li class="menu__navigation_items-item"><a href="#" title="О нас">О нас</a></li>
+                        <li class="menu__navigation_items-item"><a href="#" title="О нас">Туры</a></li>
+                        <li class="menu__navigation_items-item"><a href="#" title="О нас">Подбор тура</a></li>
+                        <li class="menu__navigation_items-item"><a href="#" title="О нас">Блог</a></li>
+                        <li class="menu__navigation_items-item"><a href="#" title="О нас">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header__right-menu">
-                    <a href="tel:+7 (800) 777 33 25" class="header__menu_phone">8(800)777-33-25</span>
+                    <a href="tel:+7 (800) 777 33 25" class="header__menu_phone">8 (800) 777-33-25</a>
                     <a href="#" class="header__menu_search">Поиск</a>
                     <a href="#" class="header__menu_enter">Вход</a>
                 </div>
-            </div>
-            <div class="header__slider">
+            </section>
+            <section class="header__slider">
                 <h2 class="header__slider_title">Эверест</h2>
                 <p class="header__slider_description hidden"></p>
                 <a href="#" class="btn detailed">Подробнее</a>
-            </div>
+            </section>
         </div>
     </header>
-    
-    <main>
-        <h2 class="visually-hidden"></h2>
-        <!---------------------------------------------->
-     
+
+<!----------------------- КОНТЕНТ ----------------------->
+    <main class="main-content">
+        <h2 class="visually-hidden">Туры с восхождением</h2>
+
+<!--________________ КАРТА ________________-->
+            <section class="content__maps">
+                <div class="container">
+                    <div class="maps_description">
+                        <span class="maps_title">Туры с восхождением на вершины мира</span>
+                        <p class="maps_content">Мы являемся экспертами в организации альпинистских туров для опытных альпинистов и для новичков. Вы можете доверить нам
+                        полную организацию вашего приключения от А до Я и быть уверенными в качестве и безопасности восхождения.<br><br>Наша компания предоставляет все необходимое: консультацию по выбору тура, перелет, визу, бронирование проживания,
+                        питание, оборудование, необходимое для восхождения, опытных гидов, полное сопровождение.</p>
+                    </div>
+                </div>
+            </section>
+
+<!--________________ ПОПУЛЯРНЫЕ ТУРЫ ________________-->
+            <section class="popular-tours">
+                <div class="container">
+                    <h2 class="popular-tours_title">Популярные туры</h2>
+                    <!--1-->
+                    <section class="popular-tours__tours">
+                        <div class="popular-tours__tours_tour mountain-beluha">
+                            <div class="popular-tours__tours_tour-mountain">  
+                                <div class="tour-mountain_vector"> 
+                                    <a href="#" class="vector-country">Россия</a>
+                                    <a href="#" class="vector-bookmark"><span class="bookmark-link">В закладки</span></a>
+                                </div>
+                                <div class="tour-mountain_description">
+                                    <span class="country-title">Белуха</span>
+                                    <table class="popular-tours__tours_table">
+                                        <tr class="tours_table-row">
+                                            <td class="tours_table-row-item tours_table-height">4506 м</td>
+                                            <td class="tours_table-row-item tours_table-days">12 дней</td>
+                                            <td class="tours_table-row-item tours_table-price">от 45000</td>
+                                        </tr>
+                                    </table>
+                                    <span class="tour-mountain_description-complexity middle-level">Средний уровень</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--2-->
+                        <div class="popular-tours__tours_tour mountain-albrus">
+                            <div class="popular-tours__tours_tour-mountain">
+                                <div class="tour-mountain_vector">
+                                    <a href="#" class="vector-country">Россия</a>
+                                    <a href="#" class="vector-bookmark"><span class="bookmark-link">В закладки</span></a>
+                                </div>
+                                <div class="tour-mountain_description">
+                                    <span class="country-title">Эльбрус</span>
+                                    <table class="popular-tours__tours_table">
+                                        <tr class="tours_table-row">
+                                            <td class="tours_table-row-item tours_table-height">5642 м</td>
+                                            <td class="tours_table-row-item tours_table-days">10 дней</td>
+                                            <td class="tours_table-row-item tours_table-price">от 25 000</td>
+                                        </tr>
+                                    </table>
+                                    <span class="tour-mountain_description-complexity middle-level">Средний уровень</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--3-->
+                        <div class="popular-tours__tours_tour mountain-kilimanjaro">
+                            <div class="popular-tours__tours_tour-mountain">
+                                <div class="tour-mountain_vector">
+                                    <a href="#" class="vector-country">Танзания</a>
+                                    <a href="#" class="vector-bookmark"><span class="bookmark-link">В закладки</span></a>
+                                </div>
+                                <div class="tour-mountain_description">
+                                    <span class="country-title">Килиманджаро</span>
+                                    <table class="popular-tours__tours_table">
+                                        <tr class="tours_table-row">
+                                            <td class="tours_table-row-item tours_table-height">5895 м</td>
+                                            <td class="tours_table-row-item tours_table-days">4 дня</td>
+                                            <td class="tours_table-row-item tours_table-price">от 55000</td>
+                                        </tr>
+                                    </table>
+                                    <span class="tour-mountain_description-complexity simple-level">Простой уровень</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--4-->
+                        <div class="popular-tours__tours_tour mountain-kilimanjaro">
+                            <div class="popular-tours__tours_tour-mountain">
+                                <div class="tour-mountain_vector">
+                                    <a href="#" class="vector-country">Танзания</a>
+                                    <a href="#" class="vector-bookmark"><span class="bookmark-link">В закладки</span></a>
+                                </div>
+                                <div class="tour-mountain_description">
+                                    <span class="country-title">Килиманджаро</span>
+                                    <table class="popular-tours__tours_table">
+                                        <tr class="tours_table-row">
+                                            <td class="tours_table-row-item tours_table-height">5895 м</td>
+                                            <td class="tours_table-row-item tours_table-days">4 дня</td>
+                                            <td class="tours_table-row-item tours_table-price">от 55000</td>
+                                        </tr>
+                                    </table>
+                                    <span class="tour-mountain_description-complexity simple-level">Простой уровень</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--5-->
+                        <div class="popular-tours__tours_tour mountain-kilimanjaro">
+                            <div class="popular-tours__tours_tour-mountain">
+                                <div class="tour-mountain_vector">
+                                    <a href="#" class="vector-country">Танзания</a>
+                                    <a href="#" class="vector-bookmark"><span class="bookmark-link">В закладки</span></a>
+                                </div>
+                                <div class="tour-mountain_description">
+                                    <span class="country-title">Килиманджаро</span>
+                                    <table class="popular-tours__tours_table">
+                                        <tr class="tours_table-row">
+                                            <td class="tours_table-row-item tours_table-height">5895 м</td>
+                                            <td class="tours_table-row-item tours_table-days">4 дня</td>
+                                            <td class="tours_table-row-item tours_table-price">от 55000</td>
+                                        </tr>
+                                    </table>
+                                    <span class="tour-mountain_description-complexity simple-level">Простой уровень</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="popular-tours__slider-button">
+                        <label class="pseudo-radio left-arrow" for="backward" tabindex="0">Назад</label>
+                        <label class="pseudo-radio right-arrow" for="forward" tabindex="0">Вперед</label>
+                    </div>
+                </div>
+            </section>
+
+<!--________________ ТАБЛИЦА ________________-->
+            <section class="climbing-levels">
+                <div class="container">
+                    <h2 class="visually-hidden">Альпинистские уровни</h2>
+                    <div class="climbing-levels__slider-button">
+                        <label class="pseudo-radio left-arrow" for="backward" tabindex="0">Назад</label>
+                        <label class="pseudo-radio right-arrow" for="forward" tabindex="0">Вперед</label>
+                    </div>
+                    <div class="climbing-levels__description">
+                        <span class="climbing-levels__description-title">Россия</span>
+                        <p class="climbing-levels__description-content">Более 15 туров для альпинистов всех уровней</p>
+                    </div>
+                    <table class="climbing-levels_table">
+                        <tr class="climbing-levels_table-title">
+                            <th class="">Вершина</th>
+                            <th class="">Высота</th>
+                            <th class="">Уровень</th>
+                            <th class="">Стоимость</th>
+                        </tr>
+                        <tr class="climbing-levels_table-albrus">
+                            <td class="">Эльбрус</td>
+                            <td class="">5642 м</td>
+                            <td class="">Средний</td>
+                            <td class="table-price">от 25 000</td>
+                        </tr>
+                        <tr class="climbing-levels_table-kaxbek">
+                            <td class="">Казбек</td>
+                            <td class="">5033 м</td>
+                            <td class="">Сложный</td>
+                            <td class="table-price">от 30 000</td>
+                        </tr>
+                        <tr class="climbing-levels_table-beluha">
+                            <td class="">Белуха</td>
+                            <td class="">4506 м</td>
+                            <td class="">Простой</td>
+                            <td class="table-price">от 20 000</td> 
+                        </tr>
+                        <tr class="climbing-levels-table-dhtau">
+                            <td class="">Дыхтау</td>
+                            <td class="">5204 м</td>
+                            <td class="">Сложный</td>
+                            <td class="table-price">от 40 000</td>
+                        </tr>
+                    </table>
+                    <a href="#" class="btn see-all">Смотреть все</a>
+                </div>
+            </section>
+
+<!--________________ БЛОГ ________________-->
+            <section class="blog container">
+                <h2 class="blog__title">Блог</h2>
+                <div class="blog__wrapper">
+                    <div class="blog__items">
+                        <ol class="blog__items-news">
+                            <li class="blog__items-news_article article-active"> 
+                                <span class="blog__item-data content-data">15 января, 2020</span> 
+                                <p class="blog__item-title">Как подготовиться к первому
+                                восхождению на вершину</p>
+                            </li>
+                            <li class="blog__items-news_article"> 
+                                <span class="blog__item-data content-data">10 января, 2020</span> 
+                                <p class="blog__item-title">Фестиваль Alpika Freeski Аlpindustria Fest
+                                Красная Поляна 13-16 февраля</p>
+                            </li>
+                            <li class="blog__items-news_article"> 
+                                <span class="blog__item-data content-data">20 декабря, 2019</span> 
+                                <p class="blog__item-title">Особенности альпинизма на Камчатке.
+                                Все о Ключевой Сопке</p>
+                            </li>
+                            <li class="blog__items-news_article"> 
+                                <span class="blog__item-data content-data">15 декабря, 2019</span> 
+                                <p class="blog__item-title">Что происходит с человеком на высоте более 3000 метров?</p>
+                            </li>
+                            <li class="blog__items-news_article"> 
+                                <span class="blog__item-data content-data">15 декабря, 2019</span> 
+                                <p class="blog__item-title">Что происходит с человеком на высоте более 3000 метров?</p>
+                            </li>
+                            <li class="blog__items-news_button"> 
+                                <button type="submit" id="send-field" name="send" class="btn-orange">Читать все новости</button>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="blog__description">
+                        <div class="blog__description_images">
+                            <img src="img/blog.jpg" alt="">
+                        </div>
+                        <div class="blog__description_content">
+                            <span class="blog__description_content-data content-data">15 января, 2020</span>
+                            <span class="blog__description_content-title">Как подготовиться к первому восхождению на вершину</span>
+                            <p class="blog__description_content-article">
+                                Перед тем, как отправиться на покорение вершины горы, нужно не только привести в порядок свою физическую форму, но и
+                                тренировать выносливость, дыхательную и сердечно-сосудистую системы. Именно на них приходится максимальная нагрузка на
+                                высоте. Поэтому из-за недостаточной подготовки вы можете сойти на полпути. Чтобы этого не случилось, занимайтесь
+                                плаванием, бегом, велосипедом и кардиотренировками.
+                                <br>Как должны проходить тренировки? В первую очередь, тренировки должны проходить постоянно, эффективно и интенсивно. Кроме
+                                того, нагрузка постепенно должна увеличиваться. В случае с бегом обязательно делать это с учетом пульса. Грамотно
+                                спланированный бег позволит не только сбросить вес, но и укрепит сердечную мышцу. При беге с высоким пульсом вы
+                                позволите организму привыкнуть к недостатку кислорода — то, с чем обязательно встретитесь в горах. Для укрепления
+                                физической подготовки и повышения выносливости также бегайте в горку или в быстром темпе поднимайтесь по лестницам. И не
+                                забудьте отдохнуть за неделю до путешествия!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<!--________________ ФОРМА ________________-->
+            <section class="feedback">
+                <h2 class="visually-hidden">Обратная связь</h2>
+                <div class="feedback__form">
+                    <form action="#" method="post">
+                        <fieldset class="feedback__form-fields">
+                            <legend class="feedback__form-fields_title">Нужна помощь с&nbsp;выбором тура?</legend>
+                            <p class="feedback__form-description">Заполните форму, наш менеджер свяжется с вами в&nbsp;ближайшее время и подберет подходящий тур</p>
+                            <label for="login-field">
+                                <input type="text" id="login-field" name="name" placeholder="Имя" required pattern="" >
+                            </label>
+                            <label for="phone-field">
+                                <input type="tel" id="phone-field" name="phone" placeholder="Телефон" required>
+                            </label>
+                            <label for="mail-field">
+                                <input type="email" id="mail-field" name="E-mail" placeholder="E-mail" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" >
+                            </label>
+                        </fieldset>
+                        <button type="submit" id="send-field" name="send" class="feedback__form-btn btn-orange">Отправить</button>
+                    </form>
+                    <p>Нажимая кнопку, вы соглашаетесь с условиями обработки<br> персональных данных</p>
+                </div>
+                <div class="feedback__image"></div>                 
+            </section>
+
+<!--________________ КОНТАКТЫ ________________-->
+            <section class="contacts container">
+                <div class="contacts__map">
+                    <img src="img/contact-map.png" alt="">
+                </div>
+                <div class="contacts__information">
+                    <h2 class="contacts__information_title">Контакты</h2>
+                    <ul class="contacts__information_items">
+                        <li class="contacts__information_item-subtitle">Адрес:</li>
+                            <li class="contacts__information_item-desc">Санкт-Петербург, <br>ул. Большая Конюшенная, 19</li>
+                        <li class="contacts__information_item-subtitle">Телефон:</li>
+                            <li class="contacts__information_item-desc">8 (800) 777-33-25</li>
+                        <li class="contacts__information_item-subtitle">E-mail:</li>
+                            <li class="contacts__information_item-desc">info@mountain.ru</li>
+                        <li class="contacts__information_item-subtitle">Социальные сети:</li>
+                            <li class="contacts__information_item-desc">
+                                <a class="contacts__information_socials link-facebook" href="">Facebook</a>
+                                <a class="contacts__information_socials link-instagram" href="">Instagram</a>
+                                <a class="contacts__information_socials link-twitter" href="">Twitter</a>
+                            </li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+        <div>
     </main>
     
-    <!-----------------------ПОДВАЛ------------------------->
-    <footer>
-       
+<!----------------------- ПОДВАЛ ------------------------->
+    <footer class="main-footer">
+        <div class="container">
+            <p>Maroon <img src="/img/svg/vector-symbol.svg" alt=""> 2020 Все права защищены</p>
+            <a href="#" title="Логотип">
+                <img src="img/logo.svg" alt="Логотип" width="101px" height="21px">
+            </a>
+            <p>Политика конфиденциальности</p>
+        </div>
     </footer>
 </body>
 </html>
