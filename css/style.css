@@ -587,43 +587,61 @@ a.see-all {
 }
 
 .blog__wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
-.btn-orange {
-    box-sizing: border-box;
-
-    width: 100%;
-    height: 50px;
-
-    border: none;
-    background-color: #EC5118;
-    color: #ffffff;
-
-}
-
-.blog__items-news_button {
-    margin-top: 30px;
+    position: relative;
 }
 
 .blog__items {
-   
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+	visibility: hidden;
+    opacity: 0;
+    
+}
+
+.blog_item-one:checked ~ .blog__items[title='item-one'] {
+	position: relative;
+	visibility: visible;
+	opacity: 1;
+}
+.blog_item-two:checked ~ .blog__items[title='item-two'] {
+	position: relative;
+	visibility: visible;
+	opacity: 1;
+}
+.blog_item-three:checked ~ .blog__items[title='item-three'] {
+	position: relative;
+	visibility: visible;
+	opacity: 1;
+}
+.blog_item-four:checked ~ .blog__items[title='item-four'] {
+	position: relative;
+	visibility: visible;
+	opacity: 1;
+}
+.blog_item-five:checked ~ .blog__items[title='item-five'] {
+	position: relative;
+	visibility: visible;
+	opacity: 1;
 }
 
 .blog__items-news {
+    position: relative;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     
     margin: 0;
     padding: 0;
-    width: 400px;
+    min-width: 400px;
 
     list-style: none;
 }
 
+
 .blog__items-news_article {
+    cursor: pointer;
     padding: 30px;
     border-bottom: 1px solid #061B28;;
 }
@@ -649,22 +667,37 @@ a.see-all {
 }
 
 .blog__item-title {
+    display: block;
     margin: 0;
 
     font-size: 18px;
     line-height: 140%;
 }
 
+.btn-orange {
+    box-sizing: border-box;
 
+    width: 100%;
+    height: 50px;
 
+    border: none;
+    background-color: #EC5118;
+    color: #ffffff;
+}
 
+.blog__items-news_button {
+    margin-top: 30px;
+}
 
 .blog__description {
     margin-left: 70px;
+    height: 825px;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 .blog__description_content-title {
-    display: inline-block;
+    display: block;
 
     padding-bottom: 25px;
 
@@ -675,9 +708,10 @@ a.see-all {
 }
 
 .blog__description_content-article {
+    display: block;
     margin: 0;
 
-    font-size: 16px;
+    font-size: 17px;
     line-height: 150%;
 }
 

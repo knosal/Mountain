@@ -226,55 +226,289 @@
             <section class="blog container">
                 <h2 class="blog__title">Блог</h2>
                 <div class="blog__wrapper">
-                    <div class="blog__items">
-                        <ol class="blog__items-news">
-                            <li class="blog__items-news_article article-active"> 
+                    <input class="blog_item-one visually-hidden" type="radio" id="item-one" value="Новости" name="point" tabindex="0" checked>
+                    <input class="blog_item-two visually-hidden" type="radio" id="item-two" value="Новости" name="point" tabindex="0">
+                    <input class="blog_item-three visually-hidden" type="radio" id="item-three" value="Новости" name="point" tabindex="0">
+                    <input class="blog_item-four visually-hidden" type="radio" id="item-four" value="Новости" name="point" tabindex="0">
+                    <input class="blog_item-five visually-hidden" type="radio" id="item-five" value="Новости" name="point" tabindex="0">
+                    <!--#1-->
+                    <div class="blog__items" title="item-one">
+                        <div class="blog__items-news">
+                            <label class="blog__items-news_article article-active" for="item-one" tabindex="0"> 
                                 <span class="blog__item-data content-data">15 января, 2020</span> 
                                 <p class="blog__item-title">Как подготовиться к первому
                                 восхождению на вершину</p>
-                            </li>
-                            <li class="blog__items-news_article"> 
+                            </label>
+                            <label class="blog__items-news_article" for="item-two" tabindex="0"> 
                                 <span class="blog__item-data content-data">10 января, 2020</span> 
                                 <p class="blog__item-title">Фестиваль Alpika Freeski Аlpindustria Fest
                                 Красная Поляна 13-16 февраля</p>
-                            </li>
-                            <li class="blog__items-news_article"> 
+                            </label>
+                            <label class="blog__items-news_article" for="item-three" tabindex="0"> 
                                 <span class="blog__item-data content-data">20 декабря, 2019</span> 
                                 <p class="blog__item-title">Особенности альпинизма на Камчатке.
                                 Все о Ключевой Сопке</p>
-                            </li>
-                            <li class="blog__items-news_article"> 
+                            </label>
+                            <label class="blog__items-news_article" for="item-four" tabindex="0"> 
                                 <span class="blog__item-data content-data">15 декабря, 2019</span> 
                                 <p class="blog__item-title">Что происходит с человеком на высоте более 3000 метров?</p>
-                            </li>
-                            <li class="blog__items-news_article"> 
+                            </label>
+                            <label class="blog__items-news_article" for="item-five" tabindex="0"> 
                                 <span class="blog__item-data content-data">15 декабря, 2019</span> 
                                 <p class="blog__item-title">Что происходит с человеком на высоте более 3000 метров?</p>
-                            </li>
-                            <li class="blog__items-news_button"> 
+                            </label>
+                            <div class="blog__items-news_button">
                                 <button type="submit" id="send-field" name="send" class="btn-orange">Читать все новости</button>
-                            </li>
-                        </ol>
-                    </div>
-                    <div class="blog__description">
-                        <div class="blog__description_images">
-                            <img src="img/blog.jpg" alt="">
+                            </div>
                         </div>
-                        <div class="blog__description_content">
-                            <span class="blog__description_content-data content-data">15 января, 2020</span>
-                            <span class="blog__description_content-title">Как подготовиться к первому восхождению на вершину</span>
-                            <p class="blog__description_content-article">
-                                Перед тем, как отправиться на покорение вершины горы, нужно не только привести в порядок свою физическую форму, но и
-                                тренировать выносливость, дыхательную и сердечно-сосудистую системы. Именно на них приходится максимальная нагрузка на
-                                высоте. Поэтому из-за недостаточной подготовки вы можете сойти на полпути. Чтобы этого не случилось, занимайтесь
-                                плаванием, бегом, велосипедом и кардиотренировками.
-                                <br>Как должны проходить тренировки? В первую очередь, тренировки должны проходить постоянно, эффективно и интенсивно. Кроме
-                                того, нагрузка постепенно должна увеличиваться. В случае с бегом обязательно делать это с учетом пульса. Грамотно
-                                спланированный бег позволит не только сбросить вес, но и укрепит сердечную мышцу. При беге с высоким пульсом вы
-                                позволите организму привыкнуть к недостатку кислорода — то, с чем обязательно встретитесь в горах. Для укрепления
-                                физической подготовки и повышения выносливости также бегайте в горку или в быстром темпе поднимайтесь по лестницам. И не
-                                забудьте отдохнуть за неделю до путешествия!
-                            </p>
+                        <div class="blog__description">
+                            <div class="blog__description_images">
+                                <img src="img/blog.jpg" alt="">
+                            </div>
+                            <div class="blog__description_content">
+                                <span class="blog__description_content-data content-data">15 января, 2020</span>
+                                <span class="blog__description_content-title">Как подготовиться к первому восхождению на вершину</span>
+                                <p class="blog__description_content-article">
+                                    Перед тем, как отправиться на покорение вершины горы, нужно не только привести в порядок свою физическую форму, но и
+                                    тренировать выносливость, дыхательную и сердечно-сосудистую системы. Именно на них приходится максимальная нагрузка на
+                                    высоте. Поэтому из-за недостаточной подготовки вы можете сойти на полпути. Чтобы этого не случилось, занимайтесь
+                                    плаванием, бегом, велосипедом и кардиотренировками.
+                                </p>
+                                <p class="blog__description_content-article">
+                                    <br> Как должны проходить тренировки? В первую очередь, тренировки должны проходить постоянно, эффективно и интенсивно. Кроме
+                                    того, нагрузка постепенно должна увеличиваться. В случае с бегом обязательно делать это с учетом пульса. Грамотно
+                                    спланированный бег позволит не только сбросить вес, но и укрепит сердечную мышцу. При беге с высоким пульсом вы
+                                    позволите организму привыкнуть к недостатку кислорода — то, с чем обязательно встретитесь в горах. Для укрепления
+                                    физической подготовки и повышения выносливости также бегайте в горку или в быстром темпе поднимайтесь по лестницам. И не
+                                    забудьте отдохнуть за неделю до путешествия!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--#2-->
+                    <div class="blog__items" title="item-two">
+                        <div class="blog__items-news">
+                            <label class="blog__items-news_article" for="item-one" tabindex="0">
+                                <span class="blog__item-data content-data">15 января, 2020</span>
+                                <p class="blog__item-title">Как подготовиться к первому
+                                    восхождению на вершину</p>
+                            </label>
+                            <label class="blog__items-news_article article-active" for="item-two" tabindex="0">
+                                <span class="blog__item-data content-data">10 января, 2020</span>
+                                <p class="blog__item-title">Фестиваль Alpika Freeski Аlpindustria Fest
+                                    Красная Поляна 13-16 февраля</p>
+                            </label>
+                            <label class="blog__items-news_article" for="item-three" tabindex="0">
+                                <span class="blog__item-data content-data">20 декабря, 2019</span>
+                                <p class="blog__item-title">Особенности альпинизма на Камчатке.
+                                    Все о Ключевой Сопке</p>
+                            </label>
+                            <label class="blog__items-news_article" for="item-four" tabindex="0">
+                                <span class="blog__item-data content-data">15 декабря, 2019</span>
+                                <p class="blog__item-title">Что происходит с человеком на высоте более 3000 метров?</p>
+                            </label>
+                            <label class="blog__items-news_article" for="item-five" tabindex="0">
+                                <span class="blog__item-data content-data">15 декабря, 2019</span>
+                                <p class="blog__item-title">Что происходит с человеком на высоте более 3000 метров?</p>
+                            </label>
+                            <div class="blog__items-news_button">
+                                <button type="submit" id="send-field" name="send" class="btn-orange">Читать все новости</button>
+                            </div>
+                        </div>
+                    
+                        <div class="blog__description">
+                            <div class="blog__description_images">
+                                <img src="img/blog.jpg" alt="">
+                            </div>
+                            <div class="blog__description_content">
+                                <span class="blog__description_content-data content-data">10 января, 2020</span>
+                                <span class="blog__description_content-title">Фестиваль Alpika Freeski Аlpindustria Fest Красная Поляна 13-16 февраля</span>
+                                <p class="blog__description_content-article">
+                                    Перед тем, как отправиться на покорение вершины горы, нужно не только привести в порядок свою физическую
+                                    форму, но и
+                                    тренировать выносливость, дыхательную и сердечно-сосудистую системы. Именно на них приходится
+                                    максимальная нагрузка на
+                                    высоте. Поэтому из-за недостаточной подготовки вы можете сойти на полпути. Чтобы этого не случилось,
+                                    занимайтесь
+                                    плаванием, бегом, велосипедом и кардиотренировками.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--#3-->
+                    <div class="blog__items" title="item-three">
+                        <div class="blog__items-news">
+                            <label class="blog__items-news_article" for="item-one" tabindex="0">
+                                <span class="blog__item-data content-data">15 января, 2020</span>
+                                <p class="blog__item-title">Как подготовиться к первому
+                                    восхождению на вершину</p>
+                            </label>
+                            <label class="blog__items-news_article" for="item-two" tabindex="0">
+                                <span class="blog__item-data content-data">10 января, 2020</span>
+                                <p class="blog__item-title">Фестиваль Alpika Freeski Аlpindustria Fest
+                                    Красная Поляна 13-16 февраля</p>
+                            </label>
+                            <label class="blog__items-news_article article-active" for="item-three" tabindex="0">
+                                <span class="blog__item-data content-data">20 декабря, 2019</span>
+                                <p class="blog__item-title">Особенности альпинизма на Камчатке.
+                                    Все о Ключевой Сопке</p>
+                            </label>
+                            <label class="blog__items-news_article" for="item-four" tabindex="0">
+                                <span class="blog__item-data content-data">15 декабря, 2019</span>
+                                <p class="blog__item-title">Что происходит с человеком на высоте более 3000 метров?</p>
+                            </label>
+                            <label class="blog__items-news_article" for="item-five" tabindex="0">
+                                <span class="blog__item-data content-data">15 декабря, 2019</span>
+                                <p class="blog__item-title">Что происходит с человеком на высоте более 3000 метров?</p>
+                            </label>
+                            <div class="blog__items-news_button">
+                                <button type="submit" id="send-field" name="send" class="btn-orange">Читать все новости</button>
+                            </div>
+                        </div>
+                    
+                        <div class="blog__description">
+                            <div class="blog__description_images">
+                                <img src="img/blog.jpg" alt="">
+                            </div>
+                            <div class="blog__description_content">
+                                <span class="blog__description_content-data content-data">10 января, 2020</span>
+                                <span class="blog__description_content-title">Особенности альпинизма на Камчатке.
+                                Все о Ключевой Сопке</span>
+                                <p class="blog__description_content-article">
+                                    Перед тем, как отправиться на покорение вершины горы, нужно не только привести в порядок свою физическую
+                                    форму, но и
+                                    тренировать выносливость, дыхательную и сердечно-сосудистую системы. Именно на них приходится
+                                    максимальная нагрузка на
+                                    высоте. Поэтому из-за недостаточной подготовки вы можете сойти на полпути. Чтобы этого не случилось,
+                                    занимайтесь
+                                    плаванием, бегом, велосипедом и кардиотренировками.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--#4-->
+                    <div class="blog__items" title="item-four">
+                        <div class="blog__items-news">
+                            <label class="blog__items-news_article" for="item-one" tabindex="0">
+                                <span class="blog__item-data content-data">15 января, 2020</span>
+                                <p class="blog__item-title">Как подготовиться к первому
+                                    восхождению на вершину</p>
+                            </label>
+                            <label class="blog__items-news_article" for="item-two" tabindex="0">
+                                <span class="blog__item-data content-data">10 января, 2020</span>
+                                <p class="blog__item-title">Фестиваль Alpika Freeski Аlpindustria Fest
+                                    Красная Поляна 13-16 февраля</p>
+                            </label>
+                            <label class="blog__items-news_article" for="item-three" tabindex="0">
+                                <span class="blog__item-data content-data">20 декабря, 2019</span>
+                                <p class="blog__item-title">Особенности альпинизма на Камчатке.
+                                    Все о Ключевой Сопке</p>
+                            </label>
+                            <label class="blog__items-news_article article-active" for="item-four" tabindex="0">
+                                <span class="blog__item-data content-data">15 декабря, 2019</span>
+                                <p class="blog__item-title">Что происходит с человеком на высоте более 3000 метров?</p>
+                            </label>
+                            <label class="blog__items-news_article" for="item-five" tabindex="0">
+                                <span class="blog__item-data content-data">15 декабря, 2019</span>
+                                <p class="blog__item-title">Что происходит с человеком на высоте более 3000 метров?</p>
+                            </label>
+                            <div class="blog__items-news_button">
+                                <button type="submit" id="send-field" name="send" class="btn-orange">Читать все новости</button>
+                            </div>
+                        </div>
+                        <div class="blog__description">
+                            <div class="blog__description_images">
+                                <img src="img/blog.jpg" alt="">
+                            </div>
+                            <div class="blog__description_content">
+                                <span class="blog__description_content-data content-data">10 января, 2020</span>
+                                <span class="blog__description_content-title">Что происходит с человеком на высоте более 3000 метров?</span>
+                                <p class="blog__description_content-article">
+                                    Перед тем, как отправиться на покорение вершины горы, нужно не только привести в порядок свою физическую
+                                    форму, но и
+                                    тренировать выносливость, дыхательную и сердечно-сосудистую системы. Именно на них приходится
+                                    максимальная нагрузка на
+                                    высоте. Поэтому из-за недостаточной подготовки вы можете сойти на полпути. Чтобы этого не случилось,
+                                    занимайтесь
+                                    плаванием, бегом, велосипедом и кардиотренировками.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--#5-->
+                    <div class="blog__items" title="item-five">
+                        <div class="blog__items-news">
+                            <label class="blog__items-news_article" for="item-one" tabindex="0">
+                                <span class="blog__item-data content-data">15 января, 2020</span>
+                                <p class="blog__item-title">Как подготовиться к первому
+                                    восхождению на вершину</p>
+                            </label>
+                            <label class="blog__items-news_article" for="item-two" tabindex="0">
+                                <span class="blog__item-data content-data">10 января, 2020</span>
+                                <p class="blog__item-title">Фестиваль Alpika Freeski Аlpindustria Fest
+                                    Красная Поляна 13-16 февраля</p>
+                            </label>
+                            <label class="blog__items-news_article" for="item-three" tabindex="0">
+                                <span class="blog__item-data content-data">20 декабря, 2019</span>
+                                <p class="blog__item-title">Особенности альпинизма на Камчатке.
+                                    Все о Ключевой Сопке</p>
+                            </label>
+                            <label class="blog__items-news_article" for="item-four" tabindex="0">
+                                <span class="blog__item-data content-data">15 декабря, 2019</span>
+                                <p class="blog__item-title">Что происходит с человеком на высоте более 3000 метров?</p>
+                            </label>
+                            <label class="blog__items-news_article article-active" for="item-five" tabindex="0">
+                                <span class="blog__item-data content-data">15 декабря, 2019</span>
+                                <p class="blog__item-title">Что происходит с человеком на высоте более 3000 метров?</p>
+                            </label>
+                            <div class="blog__items-news_button">
+                                <button type="submit" id="send-field" name="send" class="btn-orange">Читать все новости</button>
+                            </div>
+                        </div>
+                        <div class="blog__description">
+                            <div class="blog__description_images">
+                                <img src="img/blog.jpg" alt="">
+                            </div>
+                            <div class="blog__description_content">
+                                <span class="blog__description_content-data content-data">10 января, 2020</span>
+                                <span class="blog__description_content-title">Что происходит с человеком на высоте более 3000 метров?</span>
+                                <p class="blog__description_content-article">
+                                    Перед тем, как отправиться на покорение вершины горы, нужно не только привести в порядок свою физическую
+                                    форму, но и
+                                    тренировать выносливость, дыхательную и сердечно-сосудистую системы. Именно на них приходится
+                                    максимальная нагрузка на
+                                    высоте. Поэтому из-за недостаточной подготовки вы можете сойти на полпути. Чтобы этого не случилось,
+                                    занимайтесь
+                                    плаванием, бегом, велосипедом и кардиотренировками.
+                                </p>
+                                <p class="blog__description_content-article">
+                                    Перед тем, как отправиться на покорение вершины горы, нужно не только привести в порядок свою физическую
+                                    форму, но и
+                                    тренировать выносливость, дыхательную и сердечно-сосудистую системы. Именно на них приходится
+                                    максимальная нагрузка на
+                                    высоте. Поэтому из-за недостаточной подготовки вы можете сойти на полпути. Чтобы этого не случилось,
+                                    занимайтесь
+                                    плаванием, бегом, велосипедом и кардиотренировками.
+                                </p>
+                                <p class="blog__description_content-article">
+                                    Перед тем, как отправиться на покорение вершины горы, нужно не только привести в порядок свою физическую
+                                    форму, но и
+                                    тренировать выносливость, дыхательную и сердечно-сосудистую системы. Именно на них приходится
+                                    максимальная нагрузка на
+                                    высоте. Поэтому из-за недостаточной подготовки вы можете сойти на полпути. Чтобы этого не случилось,
+                                    занимайтесь
+                                    плаванием, бегом, велосипедом и кардиотренировками.
+                                </p>
+                                <p class="blog__description_content-article">
+                                    Перед тем, как отправиться на покорение вершины горы, нужно не только привести в порядок свою физическую
+                                    форму, но и
+                                    тренировать выносливость, дыхательную и сердечно-сосудистую системы. Именно на них приходится
+                                    максимальная нагрузка на
+                                    высоте. Поэтому из-за недостаточной подготовки вы можете сойти на полпути. Чтобы этого не случилось,
+                                    занимайтесь
+                                    плаванием, бегом, велосипедом и кардиотренировками.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -328,9 +562,6 @@
                     </ul>
                 </div>
             </section>
-
-
-
         <div>
     </main>
     
